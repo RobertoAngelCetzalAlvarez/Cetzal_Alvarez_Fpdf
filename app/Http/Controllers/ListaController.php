@@ -27,7 +27,7 @@ class ListaController extends Controller
     $alt=10;
     //cuerpo del reporte
     //cell imprime una celda
-    $alto=7;
+    $alto=3;
     $pdf->Image(public_path().'/imagenes/logos/logo.jpg', 10, 10, 30);
     $pdf->Ln(5);
     $pdf->cell(255,$alto,utf8_decode('UNIVERSIDAD TECNOLÓGICA DEL CENTRO'),0,0,'C');
@@ -105,7 +105,7 @@ class ListaController extends Controller
     $pdf->Cell($largo3,$alto,'',1,0,);
     $pdf->Cell($largo3,$alto,'',1,1,);
 
-    for ($i=1; $i <10 ; $i++) { 
+    for ($i=1; $i <41 ; $i++) { 
     $pdf->Cell(10,$alto,'',0,0,);
     $pdf->Cell(10,$alto,$i,1,0);
     $pdf->cell(30,$alto,utf8_decode("MATRICULA$i"),1,0,'C');
