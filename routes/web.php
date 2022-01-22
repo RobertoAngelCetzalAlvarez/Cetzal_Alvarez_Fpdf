@@ -45,3 +45,11 @@ Route::get('getRazas/{id_especie}', [
     'as'=> 'getRazas',
     'uses'=> 'EspecieController@getRazas',
 ]);
+
+
+//PDF
+// app/Http/routes.php | app/routes/web.php
+
+Route::get('pdf','PdfController@pdf');
+//listado de alumnos
+Route::get('l','ListaController@pdf');
