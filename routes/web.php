@@ -52,4 +52,6 @@ Route::get('getRazas/{id_especie}', [
 
 Route::get('pdf','PdfController@pdf');
 //listado de alumnos
-Route::get('l','ListaController@pdf');
+Route::get('lista','ListaController@pdf');
+//cronograma 
+Route::get('c','CronogramaController@pdf');
